@@ -1,12 +1,12 @@
 # voteinfobot
 import praw
 import time
-# not putting in the info for privacy reasons, but this is what the program needs to log in as the bot and do the automated reply
-reddit = praw.Reddit(client_id='',
-                     client_secret='',
-                     username='',
-                     password='',
-                     user_agent='')
+
+reddit = praw.Reddit(client_id='', # enter client id
+                     client_secret='', # enter client secret
+                     username='', # enter bot username
+                     password='', # enter bot password
+                     user_agent='') # enter user agent
 # .hot(limit=100, skip_existing=True)
 # phrases to activate the bot
 keyphrase = ['Trump', 'trump', 'Biden', 'biden', 'mail-in', 'election', 'Election', ]
